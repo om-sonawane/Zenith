@@ -1,0 +1,631 @@
+/* Premium Watch Collection Styles */
+
+:root {
+    --primary-dark: #1a1a1a;
+    --secondary-dark: #2c2c2c;
+    --gold-accent: #d4af37;
+    --gold-light: #f4e7a3;
+    --text-light: #ffffff;
+    --text-muted: #b8b8b8;
+    --text-dark: #333333;
+    --border-color: #3a3a3a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navigation Styles */
+.navbar {
+    background: transparent;
+    transition: all 0.3s ease;
+    padding: 1rem 0;
+}
+
+.navbar.scrolled {
+    background: rgba(26, 26, 26, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--gold-accent) !important;
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-light) !important;
+    font-weight: 500;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--gold-accent) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url("Leonardo_Phoenix_10_A_sleek_minimalist_watch_with_a_twotone_st_3\ \(1\).jpg") no-repeat center center/cover;
+    position: relative;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 70% 30%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
+}
+
+.hero-content {
+    z-index: 2;
+    position: relative;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.text-gold {
+    color: var(--gold-accent);
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    max-width: 500px;
+}
+
+
+
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Button Styles */
+.btn-gold {
+    background: linear-gradient(45deg, var(--gold-accent), var(--gold-light));
+    border: none;
+    color: var(--primary-dark);
+    font-weight: 600;
+    padding: 1rem 2rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-gold:hover {
+    background: linear-gradient(45deg, var(--gold-light), var(--gold-accent));
+    color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+}
+
+.btn-outline-gold {
+    border: 2px solid var(--gold-accent);
+    color: var(--gold-accent);
+    background: transparent;
+    padding: 0.8rem 1.5rem;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.btn-outline-gold:hover {
+    background: var(--gold-accent);
+    color: var(--primary-dark);
+}
+
+/* Section Styles */
+.collection-section {
+    background: var(--secondary-dark);
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 3rem;
+}
+
+/* Watch Card Styles */
+.watch-card {
+    background: var(--primary-dark);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+    height: 100%;
+}
+
+.watch-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-color: var(--gold-accent);
+}
+
+.watch-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.watch-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--secondary-dark), var(--primary-dark));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold-accent);
+}
+
+.watch-placeholder i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.watch-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(26, 26, 26, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.watch-card:hover .watch-overlay {
+    opacity: 1;
+}
+
+.watch-info {
+    padding: 1.5rem;
+}
+
+.watch-info h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+
+.watch-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gold-accent);
+    margin-bottom: 0.5rem;
+}
+
+.watch-description {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* About Section */
+.about-section {
+    background: var(--primary-dark);
+}
+
+.about-content {
+    padding-right: 2rem;
+}
+
+.about-content .lead {
+    font-size: 1.3rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.about-content p {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--gold-accent);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-placeholder {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, var(--secondary-dark), var(--primary-dark));
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold-accent);
+    border: 2px solid var(--border-color);
+}
+
+.image-placeholder i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.image-placeholder p {
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact-section {
+    background: var(--secondary-dark);
+}
+
+.contact-form {
+    background: var(--primary-dark);
+    padding: 3rem;
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+}
+
+.form-control {
+    background: var(--secondary-dark);
+    border: 1px solid var(--border-color);
+    color: var(--text-light);
+    padding: 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    background: var(--secondary-dark);
+    border-color: var(--gold-accent);
+    color: var(--text-light);
+    box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.25);
+}
+
+.form-control::placeholder {
+    color: var(--text-muted);
+}
+
+/* Footer */
+.footer-section {
+    background: var(--primary-dark);
+    border-top: 1px solid var(--border-color);
+}
+
+.footer-brand h5 {
+    color: var(--gold-accent);
+    margin-bottom: 0.5rem;
+}
+
+.footer-brand p {
+    color: var(--text-muted);
+    margin: 0;
+}
+
+.social-link {
+    color: var(--text-muted);
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: var(--gold-accent);
+}
+
+.footer-divider {
+    border-color: var(--border-color);
+    margin: 1.5rem 0;
+}
+
+.footer-text {
+    color: var(--text-muted);
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Modal Styles */
+.watch-modal .modal-content {
+    background: var(--primary-dark);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+}
+
+.watch-modal .modal-header {
+    border-bottom: 1px solid var(--border-color);
+    background: var(--secondary-dark);
+}
+
+.watch-modal .modal-title {
+    color: var(--gold-accent);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.watch-modal .btn-close-white {
+    filter: brightness(0) saturate(100%) invert(74%) sepia(19%) saturate(1649%) hue-rotate(24deg) brightness(92%) contrast(88%);
+}
+
+.modal-watch-image {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.modal-watch-placeholder {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(135deg, var(--secondary-dark), var(--primary-dark));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold-accent);
+    border: 3px solid var(--gold-accent);
+    position: relative;
+}
+
+.modal-watch-placeholder::before {
+    content: '';
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 50%;
+}
+
+.modal-watch-placeholder i {
+    font-size: 4rem;
+}
+
+.modal-watch-details {
+    padding-left: 2rem;
+}
+
+.watch-name {
+    color: var(--text-light);
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.watch-price-large {
+    color: var(--gold-accent);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.watch-description-full {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.specifications {
+    margin-bottom: 2rem;
+}
+
+.specifications h5 {
+    color: var(--gold-accent);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.spec-list {
+    list-style: none;
+    padding: 0;
+}
+
+.spec-list li {
+    color: var(--text-muted);
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+}
+
+.spec-list li strong {
+    color: var(--text-light);
+    display: inline-block;
+    min-width: 140px;
+}
+
+.modal-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.modal-actions .btn {
+    flex: 1;
+    min-width: 180px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .watch-circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .watch-circle::before {
+        width: 180px;
+        height: 180px;
+    }
+
+    .watch-circle i {
+        font-size: 2.5rem;
+    }
+
+    .about-content {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .contact-form {
+        padding: 2rem;
+    }
+
+    .image-placeholder {
+        width: 250px;
+        height: 250px;
+    }
+
+    .modal-watch-details {
+        padding-left: 0;
+        margin-top: 1rem;
+    }
+
+    .modal-watch-placeholder {
+        width: 200px;
+        height: 200px;
+    }
+
+    .modal-watch-placeholder::before {
+        width: 180px;
+        height: 180px;
+    }
+
+    .watch-name {
+        font-size: 1.8rem;
+    }
+
+    .watch-price-large {
+        font-size: 1.6rem;
+    }
+
+    .modal-actions .btn {
+        min-width: 140px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .btn-gold {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .modal-watch-placeholder {
+        width: 150px;
+        height: 150px;
+    }
+
+    .modal-watch-placeholder::before {
+        width: 130px;
+        height: 130px;
+    }
+
+    .modal-watch-placeholder i {
+        font-size: 2.5rem;
+    }
+
+    .watch-name {
+        font-size: 1.5rem;
+    }
+
+    .watch-price-large {
+        font-size: 1.3rem;
+    }
+
+    .modal-actions {
+        flex-direction: column;
+    }
+
+    .modal-actions .btn {
+        min-width: auto;
+        width: 100%;
+    }
+}

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith- Premium Watch Collection</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-crown me-2"></i>Zenith
+    
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#collection">Collection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        
+                        <h1 class="hero-title">Timeless <span class="text-gold">Elegance</span></h1>
+                        <p class="hero-subtitle">Discover our curated collection of premium timepieces that define sophistication and craftsmanship.</p>
+                        <a href="#collection" class="btn btn-gold btn-lg mt-4">
+                            Explore Collection <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-watch">
+                        <div class="watch-circle">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section id="collection" class="collection-section py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Premium Collection</h2>
+                    <p class="section-subtitle">Each timepiece tells a story of precision and luxury</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Watch Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="watch-card">
+                        <div class="watch-image">
+                            <img src="w4.jpg" alt="image not found" style="width:100%; height:100%; object-fit:cover;"   >
+                            <div class="watch-placeholder">
+                                <i class="fas fa-watch"></i>
+                            </div>
+                            <div class="watch-overlay">
+                                <button class="btn btn-outline-gold" data-bs-toggle="modal" data-bs-target="#watchModal" data-watch="royal-heritage">View Details</button>
+                            </div>
+                        </div>
+                        <div class="watch-info">
+                            <h4>Royal Heritage</h4>
+                            <p class="watch-price">$15,999</p>
+                            <p class="watch-description">Swiss automatic movement with 42mm case</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Watch Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="watch-card">
+                        <div class="watch-image">
+                             <img src="2nd.jpg" alt="image not found" style="width:100%; height:100%; object-fit:cover;"   >
+                            <div class="watch-placeholder">
+                                <i class="fas fa-watch"></i>
+                            </div>
+                            <div class="watch-overlay">
+                                <button class="btn btn-outline-gold" data-bs-toggle="modal" data-bs-target="#watchModal" data-watch="ocean-master">View Details</button>
+                            </div>
+                        </div>
+                        <div class="watch-info">
+                            <h4>Ocean Master</h4>
+                            <p class="watch-price">$12,499</p>
+                            <p class="watch-description">Professional diving watch, 300m water resistance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Watch Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="watch-card">
+                        <div class="watch-image">
+                             <img src="w2.jpg" alt="image not found" style="width:100%; height:100%; object-fit:cover;"   >
+                            <div class="watch-placeholder">
+                                <i class="fas fa-watch"></i>
+                            </div>
+                            <div class="watch-overlay">
+                                <button class="btn btn-outline-gold" data-bs-toggle="modal" data-bs-target="#watchModal" data-watch="classic-elite">View Details</button>
+                            </div>
+                        </div>
+                        <div class="watch-info">
+                            <h4>Classic Elite</h4>
+                            <p class="watch-price">$8,999</p>
+                            <p class="watch-description">Timeless design with leather strap</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Watch Card 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="watch-card">
+                        <div class="watch-image">
+                             <img src="w3.jpg" alt="image not found" style="width:100%; height:100%; object-fit:cover;"   >
+                            <div class="watch-placeholder">
+                                <i class="fas fa-watch"></i>
+                            </div>
+                            <div class="watch-overlay">
+                                <button class="btn btn-outline-gold" data-bs-toggle="modal" data-bs-target="#watchModal" data-watch="sportivo-pro">View Details</button>
+                            </div>
+                        </div>
+                        <div class="watch-info">
+                            <h4>Sportivo Pro</h4>
+                            <p class="watch-price">$6,799</p>
+                            <p class="watch-description">Chronograph with titanium case</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Watch Card 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="watch-card">
+                        <div class="watch-image">
+                             <img src="5th.jpg" alt="image not found" style="width:100%; height:100%; object-fit:cover;"   >
+                            <div class="watch-placeholder">
+                                <i class="fas fa-watch"></i>
+                            </div>
+                            <div class="watch-overlay">
+                                <button class="btn btn-outline-gold" data-bs-toggle="modal" data-bs-target="#watchModal" data-watch="vintage-collector">View Details</button>
+                            </div>
+                        </div>
+                        <div class="watch-info">
+                            <h4>Vintage Collector</h4>
+                            <p class="watch-price">$22,999</p>
+                            <p class="watch-description">Limited edition with gold accents</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Watch Card 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="watch-card">
+                        <div class="watch-image">
+                            <img src="w6.jpg" alt="image not found" style="width:100%; height:100%; object-fit:cover;"   >
+                            <div class="watch-placeholder">
+                                <i class="fas fa-watch"></i>
+                            </div>
+                            <div class="watch-overlay">
+                                <button class="btn btn-outline-gold" data-bs-toggle="modal" data-bs-target="#watchModal" data-watch="diamond-elite">View Details</button>
+                            </div>
+                        </div>
+                        <div class="watch-info">
+                            <h4>Diamond Elite</h4>
+                            <p class="watch-price">$45,999</p>
+                            <p class="watch-description">Diamond-studded bezel, 18k gold case</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2 class="section-title text-start">Craftsmanship Beyond Time</h2>
+                        <p class="lead">For over three decades, Zenith
+                 has been synonymous with exceptional quality and timeless design.</p>
+                        <p>Our master craftsmen meticulously select each component, ensuring that every timepiece meets the highest standards of precision and beauty. From Swiss movements to hand-finished cases, we create watches that are not just instruments of time, but works of art.</p>
+                        <div class="row mt-4">
+                            <div class="col-6">
+                                <div class="stat-item">
+                                    <h3 class="stat-number">30+</h3>
+                                    <p class="stat-label">Years of Excellence</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stat-item">
+                                    <h3 class="stat-number">1000+</h3>
+                                    <p class="stat-label">Satisfied Customers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-tools"></i>
+                            <p>Precision Craftsmanship</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-subtitle">Ready to find your perfect timepiece?</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-form">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-gold btn-lg">
+                                    Send Message <i class="fas fa-paper-plane ms-2"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="footer-brand">
+                        <h5><i class="fas fa-crown me-2"></i>Zenith
+            </h5>
+                        <p>Timeless elegance, exceptional craftsmanship.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="footer-social text-lg-end">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer-text">&copy; 2025 Zenith
+            . All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Watch Details Modal -->
+    <div class="modal fade" id="watchModal" tabindex="-1" aria-labelledby="watchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content watch-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="watchModalLabel">Watch Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="modal-watch-image">
+                                <div class="modal-watch-placeholder">
+                                    <i class="fas fa-watch"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="modal-watch-details">
+                                <h3 class="watch-name">Watch Name</h3>
+                                <p class="watch-price-large">$0,000</p>
+                                <p class="watch-description-full">Description</p>
+                                
+                                <div class="specifications">
+                                    <h5>Specifications</h5>
+                                    <ul class="spec-list">
+                                        <li><strong>Movement:</strong> <span class="spec-movement">-</span></li>
+                                        <li><strong>Case Size:</strong> <span class="spec-case">-</span></li>
+                                        <li><strong>Material:</strong> <span class="spec-material">-</span></li>
+                                        <li><strong>Water Resistance:</strong> <span class="spec-water">-</span></li>
+                                        <li><strong>Crystal:</strong> <span class="spec-crystal">-</span></li>
+                                        <li><strong>Strap:</strong> <span class="spec-strap">-</span></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="modal-actions mt-4">
+                                    <button class="btn btn-gold btn-lg me-3">
+                                        <i class="fas fa-shopping-cart me-2"></i>Add to Cart
+                                    </button>
+                                    <button class="btn btn-outline-gold">
+                                        <i class="fas fa-heart me-2"></i>Add to Wishlist
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar background change on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Watch data
+        const watchData = {
+            'royal-heritage': {
+                name: 'Royal Heritage',
+                price: '$15,999',
+                description: 'The Royal Heritage represents the pinnacle of traditional watchmaking excellence. This masterpiece combines centuries-old craftsmanship techniques with modern precision engineering.',
+                movement: 'Swiss Automatic (42-hour power reserve)',
+                case: '42mm Stainless Steel',
+                material: '18k Rose Gold Bezel',
+                water: '100m (10 ATM)',
+                crystal: 'Sapphire Crystal with Anti-Reflective Coating',
+                strap: 'Genuine Alligator Leather'
+            },
+            'ocean-master': {
+                name: 'Ocean Master',
+                price: '$12,499',
+                description: 'Built for the depths, the Ocean Master is a professional diving instrument that combines rugged reliability with sophisticated design. Perfect for underwater adventures.',
+                movement: 'Swiss Automatic Diving Movement',
+                case: '44mm Titanium',
+                material: 'Brushed Titanium with Ceramic Bezel',
+                water: '300m (30 ATM) Professional Diving',
+                crystal: 'Sapphire Crystal with Anti-Reflective Coating',
+                strap: 'Rubber Diving Strap with Titanium Buckle'
+            },
+            'classic-elite': {
+                name: 'Classic Elite',
+                price: '$8,999',
+                description: 'Timeless elegance meets modern sophistication in the Classic Elite. This dress watch is perfect for formal occasions and everyday luxury.',
+                movement: 'Swiss Quartz Precision Movement',
+                case: '40mm Polished Steel',
+                material: 'Stainless Steel with Polished Finish',
+                water: '50m (5 ATM)',
+                crystal: 'Sapphire Crystal',
+                strap: 'Premium Italian Leather with Steel Buckle'
+            },
+            'sportivo-pro': {
+                name: 'Sportivo Pro',
+                price: '$6,799',
+                description: 'The Sportivo Pro is engineered for performance and precision. This chronograph combines sporty aesthetics with professional timing capabilities.',
+                movement: 'Swiss Chronograph Movement',
+                case: '42mm Titanium',
+                material: 'Lightweight Titanium with Carbon Fiber Accents',
+                water: '200m (20 ATM)',
+                crystal: 'Sapphire Crystal with Anti-Reflective Coating',
+                strap: 'Titanium Bracelet with Micro-Adjustment'
+            },
+            'vintage-collector': {
+                name: 'Vintage Collector',
+                price: '$22,999',
+                description: 'A limited edition timepiece that pays homage to classic watchmaking traditions. Only 500 pieces worldwide, making it a true collector\'s item.',
+                movement: 'Hand-Wound Mechanical Movement',
+                case: '38mm 18k Gold',
+                material: '18k Yellow Gold with Hand-Engraved Details',
+                water: '30m (3 ATM)',
+                crystal: 'Sapphire Crystal with Vintage-Style Coating',
+                strap: 'Hand-Stitched Vintage Leather'
+            },
+            'diamond-elite': {
+                name: 'Diamond Elite',
+                price: '$45,999',
+                description: 'The ultimate expression of luxury and craftsmanship. This exclusive timepiece features carefully selected diamonds and precious metals.',
+                movement: 'Swiss Automatic Luxury Movement',
+                case: '40mm 18k White Gold',
+                material: '18k White Gold with Diamond-Set Bezel (2.5 Carats)',
+                water: '50m (5 ATM)',
+                crystal: 'Sapphire Crystal with Diamond Hour Markers',
+                strap: 'Satin Finished 18k Gold Bracelet'
+            }
+        };
+
+        // Modal event handler
+        document.getElementById('watchModal').addEventListener('show.bs.modal', function (event) {
+            const button = event.relatedTarget;
+            const watchId = button.getAttribute('data-watch');
+            const watch = watchData[watchId];
+            
+            if (watch) {
+                document.querySelector('.watch-name').textContent = watch.name;
+                document.querySelector('.watch-price-large').textContent = watch.price;
+                document.querySelector('.watch-description-full').textContent = watch.description;
+                document.querySelector('.spec-movement').textContent = watch.movement;
+                document.querySelector('.spec-case').textContent = watch.case;
+                document.querySelector('.spec-material').textContent = watch.material;
+                document.querySelector('.spec-water').textContent = watch.water;
+                document.querySelector('.spec-crystal').textContent = watch.crystal;
+                document.querySelector('.spec-strap').textContent = watch.strap;
+            }
+        });
+    </script>
+</body>
+</html>
