@@ -156,7 +156,7 @@ h6 {
 
 /* Section Styles */
 .collection-section {
-    background: var(--secondary-dark);
+    background: var(--primary-dark);
 }
 
 .section-title {
@@ -320,7 +320,7 @@ h6 {
 
 /* Contact Section */
 .contact-section {
-    background: var(--secondary-dark);
+    background: var(--primary-dark);
 }
 
 .contact-form {
